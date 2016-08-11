@@ -1,0 +1,7 @@
+{% load staticfiles %}
+
+<ul>
+	{% for event in all_event %}
+	<li><a href="{% url 'detevent' event.id %}">{{event.title}}</a></li>
+	{% endfor %}
+</ul>
